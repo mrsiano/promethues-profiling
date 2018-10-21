@@ -1,0 +1,15 @@
+(pprof) top10 --cum
+Showing nodes accounting for 299036, 11.72% of 2552363 total
+Dropped 56 nodes (cum <= 12761)
+Showing top 10 nodes out of 130
+      flat  flat%   sum%        cum   cum%
+      5461  0.21%  0.21%     449224 17.60%  github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb.(*SegmentWAL).LogDeletes /go/src/github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb/wal.go
+         0     0%  0.21%     396673 15.54%  github.com/prometheus/prometheus/promql.(*evaluator).matrixIterSlice /go/src/github.com/prometheus/prometheus/promql/engine.go
+         0     0%  0.21%     396673 15.54%  github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb.(*headIndexReader).LabelValues /go/src/github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb/head.go
+         0     0%  0.21%     396673 15.54%  github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb.readTombstones /go/src/github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb/tombstones.go
+         0     0%  0.21%     366967 14.38%  github.com/prometheus/prometheus/vendor/github.com/golang/protobuf/protoc-gen-go/descriptor.(*MessageOptions).GetUninterpretedOption /go/src/github.com/prometheus/prometheus/vendor/github.com/golang/protobuf/protoc-gen-go/descriptor/descriptor.pb.go
+         0     0%  0.21%     365943 14.34%  github.com/prometheus/prometheus/vendor/github.com/gogo/protobuf/protoc-gen-gogo/descriptor.(*MethodOptions_IdempotencyLevel).UnmarshalJSON /go/src/github.com/prometheus/prometheus/vendor/github.com/gogo/protobuf/protoc-gen-gogo/descriptor/descriptor.pb.go
+         0     0%  0.21%     345647 13.54%  github.com/prometheus/prometheus/promql.(*evaluator).VectorOr /go/src/github.com/prometheus/prometheus/promql/engine.go
+         0     0%  0.21%     345647 13.54%  github.com/prometheus/prometheus/promql.(*evaluator).eval /go/src/github.com/prometheus/prometheus/promql/engine.go
+         0     0%  0.21%     345647 13.54%  github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb/chunkenc.(*xorIterator).Next /go/src/github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb/chunkenc/xor.go
+    293575 11.50% 11.72%     315421 12.36%  github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb.(*SegmentWAL).Truncate /go/src/github.com/prometheus/prometheus/vendor/github.com/prometheus/tsdb/wal.go
